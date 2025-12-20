@@ -1,1 +1,349 @@
-sla 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vida Disciplinada e Organizada</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- PROGRESS BAR -->
+<div id="progress-bar"></div>
+
+<header>
+  <h1>Vida Disciplinada</h1>
+  <nav>
+    <ul>
+      <li><a href="#">Organização</a></li>
+      <li><a href="#">Disciplina</a></li>
+      <li><a href="#">Rotina</a></li>
+      <li><a href="#">Quiz</a></li>
+      <li><a href="#">Planejamento</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" data-aos="fade-up">
+    <h2>Construa hábitos que mudam vidas</h2>
+    <p>
+      Organização, disciplina e rotina não são talentos — são habilidades
+      que podem ser aprendidas e praticadas todos os dias.
+    </p>
+
+    <div class="btn-group">
+      <a class="btn" href="#">Começar agora</a>
+      <a class="btn" href="#">Fazer autoavaliação</a>
+    </div>
+  </section>
+
+  <!-- CARDS COM ÍCONES -->
+  <section class="features">
+    <article data-aos="zoom-in">
+      <i class="fas fa-layer-group"></i>
+      <h3>Organização</h3>
+      <p>Estruture seu ambiente e sua mente para eliminar distrações.</p>
+    </article>
+
+    <article data-aos="zoom-in" data-aos-delay="100">
+      <i class="fas fa-fire"></i>
+      <h3>Disciplina</h3>
+      <p>Aprenda a agir mesmo quando a motivação não aparece.</p>
+    </article>
+
+    <article data-aos="zoom-in" data-aos-delay="200">
+      <i class="fas fa-clock"></i>
+      <h3>Rotina</h3>
+      <p>Crie hábitos sustentáveis que respeitam seu ritmo.</p>
+    </article>
+
+    <article data-aos="zoom-in" data-aos-delay="300">
+      <i class="fas fa-chart-line"></i>
+      <h3>Monitoramento</h3>
+      <p>Acompanhe seu progresso e visualize sua evolução.</p>
+    </article>
+  </section>
+
+  <!-- CAROUSEL -->
+  <section class="carousel" data-aos="fade-up">
+    <h2>Depoimentos</h2>
+    <div class="carousel-container">
+      <div class="slide active">
+        “Depois que organizei minha rotina, meu rendimento escolar mudou completamente.”
+      </div>
+      <div class="slide">
+        “Aprendi que disciplina é liberdade, não prisão.”
+      </div>
+      <div class="slide">
+        “Planejar meu dia reduziu minha ansiedade.”
+      </div>
+    </div>
+
+    <div class="carousel-controls">
+      <button id="prev">‹</button>
+      <button id="next">›</button>
+    </div>
+  </section>
+
+  <!-- ACCORDION -->
+  <section class="accordion" data-aos="fade-up">
+    <h2>Perguntas Frequentes</h2>
+
+    <div class="accordion-item">
+      <button class="accordion-header">Disciplina é nascer com força de vontade?</button>
+      <div class="accordion-content">
+        <p>Não. Disciplina é treinável e se constrói com pequenas ações consistentes.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">Rotina não deixa a vida chata?</button>
+      <div class="accordion-content">
+        <p>Uma boa rotina libera tempo e energia para o que realmente importa.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2025 Vida Disciplinada e Organizada</p>
+</footer>
+
+<!-- AOS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>AOS.init({ once: true, duration: 800 });</script>
+
+<!-- JS -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
+
+<style>
+:root {
+  --primary-bg: #B3D9FF;
+  --secondary-bg: #D6E9FF;
+  --primary-color: #7AAFFF;
+  --secondary-color: #A0C4FF;
+  --text-color-main: #222;
+  --text-color-secondary: #809CC6;
+  --white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--white);
+  color: var(--text-color-main);
+  line-height: 1.6;
+}
+
+/* PROGRESS BAR */
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: var(--primary-color);
+  width: 0%;
+  z-index: 9999;
+}
+
+header {
+  background: var(--primary-bg);
+  padding: 1.8rem 1rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,.15);
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+nav a {
+  color: var(--white);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.hero {
+  margin: 3rem auto;
+  padding: 4rem 2rem;
+  max-width: 960px;
+  text-align: center;
+  background: linear-gradient(135deg, var(--primary-bg), var(--secondary-color));
+  border-radius: 16px;
+  color: var(--white);
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.btn {
+  background: var(--primary-color);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: var(--secondary-color);
+  color: var(--text-color-main);
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin: 4rem auto;
+  max-width: 960px;
+}
+
+.features article {
+  background: var(--secondary-bg);
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0,0,0,.1);
+}
+
+.features i {
+  font-size: 2.2rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+/* CAROUSEL */
+.carousel {
+  text-align: center;
+  margin: 5rem auto;
+  max-width: 700px;
+}
+
+.carousel-container {
+  background: var(--secondary-bg);
+  padding: 2rem;
+  border-radius: 16px;
+  min-height: 120px;
+}
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.carousel-controls {
+  margin-top: 1rem;
+}
+
+.carousel-controls button {
+  background: var(--primary-color);
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  padding: .5rem 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* ACCORDION */
+.accordion {
+  max-width: 800px;
+  margin: 4rem auto;
+}
+
+.accordion-item {
+  margin-bottom: 1rem;
+}
+
+.accordion-header {
+  width: 100%;
+  background: var(--secondary-bg);
+  border: none;
+  padding: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.accordion-content {
+  display: none;
+  padding: 1rem;
+}
+</style>
+
+
+<script>
+// PROGRESS BAR
+window.addEventListener("scroll", () => {
+  const scrollTop = window.scrollY;
+  const docHeight = document.body.scrollHeight - window.innerHeight;
+  const progress = (scrollTop / docHeight) * 100;
+  document.getElementById("progress-bar").style.width = `${progress}%`;
+});
+
+// CAROUSEL
+const slides = document.querySelectorAll(".slide");
+let index = 0;
+
+function showSlide(i) {
+  slides.forEach(s => s.classList.remove("active"));
+  slides[i].classList.add("active");
+}
+
+document.getElementById("next").onclick = () => {
+  index = (index + 1) % slides.length;
+  showSlide(index);
+};
+
+document.getElementById("prev").onclick = () => {
+  index = (index - 1 + slides.length) % slides.length;
+  showSlide(index);
+};
+
+// ACCORDION
+document.querySelectorAll(".accordion-header").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const content = btn.nextElementSibling;
+    content.style.display =
+      content.style.display === "block" ? "none" : "block";
+  });
+});
+</script>
