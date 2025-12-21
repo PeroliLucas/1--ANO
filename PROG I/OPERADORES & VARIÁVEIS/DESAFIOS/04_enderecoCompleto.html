@@ -1,0 +1,29 @@
+<script>
+    /*
+        DESAFIO: Endereço Completo
+        Peça para o usuário informar o nome da rua, número da casa, bairro, cidade e estado. Após, o programa deverá apresentar a seguinte mensagem:
+        Exemplo de saída: "Rua [Nome da Rua], nº [Número da Casa], Bairro [Bairro], Cidade de [Cidade] ([Estado])."
+    */
+
+    //ENTRADA
+    let nomeRua = prompt("Por favor, insira o nome da rua:").trim();
+    let numeroCasa = Number(prompt("Por favor, insira o número da casa:").trim());
+    let bairro = prompt("Por favor, insira o nome do bairro:").trim();
+    let cidade = prompt("Por favor, insira o nome da cidade:").trim();
+    let estado = prompt("Por favor, insira a sigla do estado:").trim();
+
+    //PROCESSAMENTO
+    let enderecoCompleto = "Rua " + nomeRua + ", nº " + numeroCasa + ", Bairro " + bairro + ", Cidade de " + cidade + " (" + estado + ").";
+
+    //SAÍDA
+    alert(enderecoCompleto);
+
+    // EXPLICAÇÃO:
+    /*
+        1. O programa começa solicitando ao usuário que insira o nome da rua, número da casa, bairro, cidade e estado através da função prompt().
+        2. O método trim() é utilizado para remover quaisquer espaços em branco extras no início ou no final de cada entrada fornecida pelo usuário.
+        3. A função Number() é utilizada para converter a entrada do número da casa, que é uma string, em um número.
+        4. Em seguida, o programa concatena todas as partes do endereço em uma única string formatada.
+        5. Finalmente, o programa utiliza a função alert() para exibir o endereço completo formatado.
+    */
+</script>

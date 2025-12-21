@@ -1,0 +1,26 @@
+<script>
+    /* 
+        DESAFIO: Nome Completo
+        Peça para o usuário informar o seu nome, o nome do meio e o seu último nome. Após, o programa deverá apresentar a seguinte mensagem:
+        Exemplo de saída: "Olá, [Nome Completo]! É um prazer conhecê-lo(a)!"
+    */
+
+   //ENTRADA
+   let nome = prompt("Por favor, insira seu nome:").trim();
+   let nomeDoMeio = prompt("Por favor, insira seu nome do meio:").trim();
+   let ultimoNome = prompt("Por favor, insira seu último nome:").trim();
+
+   //PROCESSAMENTO
+   let nomeCompleto = nome + " " + nomeDoMeio + " " + ultimoNome;
+
+    //SAÍDA
+    alert("Olá, " + nomeCompleto + "! É um prazer conhecê-lo(a)!");
+
+    // EXPLICAÇÃO:
+    /*  
+        1. O programa começa solicitando ao usuário que insira seu nome, nome do meio e último nome através da função prompt().
+        2. O método trim() é utilizado para remover quaisquer espaços em branco extras no início ou no final de cada parte do nome inserido.
+        3. Em seguida, o programa concatena as três partes do nome com espaços entre elas para formar o nome completo.
+        4. Finalmente, o programa utiliza a função alert() para exibir uma mensagem personalizada, incorporando o nome completo fornecido pelo usuário.
+    */
+</script>

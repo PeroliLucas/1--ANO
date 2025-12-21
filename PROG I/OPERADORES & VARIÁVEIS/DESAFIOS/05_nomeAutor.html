@@ -1,0 +1,26 @@
+<script>
+    /*
+        DESAFIO: Nome do Autor
+        Peça para o usuário informar o seu nome e sobrenome. Após, o programa deverá apresentar a seguinte mensagem:
+        Exemplo de saída: "Nome do Autor: [SOBRENOME EM MAIÚSCULAS], [Nome]."
+    */
+
+    //ENTRADA
+    let nome = prompt("Por favor, insira seu nome:").trim();    
+    let sobrenome = prompt("Por favor, insira seu sobrenome:").trim();
+
+    //PROCESSAMENTO
+    let nomeAutor = "Nome do Autor: " + sobrenome.toUpperCase() + ", " + nome + ".";
+
+    //SAÍDA
+    alert(nomeAutor);
+
+    // EXPLICAÇÃO:
+    /*
+        1. O programa começa solicitando ao usuário que insira seu nome e sobrenome através da função prompt().
+        2. O método trim() é utilizado para remover quaisquer espaços em branco extras no início ou no final de cada entrada fornecida pelo usuário.
+        3. Em seguida, o programa concatena as partes do nome na ordem desejada, utilizando o método toUpperCase() para converter o sobrenome em letras maiúsculas.
+        4. Finalmente, o programa utiliza a função alert() para exibir o nome do autor formatado conforme especificado.
+    */
+</script>
+

@@ -1,0 +1,28 @@
+<script>
+    /*
+        DESAFIO: Nome e Ano de Nascimento
+        Peça para o usuário informar o seu nome e o ano em que nasceu. Após, o programa deverá apresentar a seguinte mensagem:
+        Exemplo de saída: "Olá, [Nome]! Você tem [idade] anos."
+    */
+
+    //ENTRADA
+    let nome = prompt("Por favor, insira seu nome:").trim();
+    let anoNascimento = parseInt(prompt("Por favor, insira o ano em que você nasceu:").trim());
+    let anoAtual = new Date().getFullYear();
+
+    //PROCESSAMENTO
+    let idade = anoAtual - anoNascimento;
+
+    //SAÍDA
+    alert("Olá, " + nome + "! Você tem " + idade + " anos.");
+
+    // EXPLICAÇÃO:
+    /*
+        1. O programa começa solicitando ao usuário que insira seu nome e o ano de nascimento através da função prompt().
+        2. O método trim() é utilizado para remover quaisquer espaços em branco extras no início ou no final das entradas fornecidas pelo usuário.
+        3. A função parseInt() é utilizada para converter a entrada do ano de nascimento, que é uma string, em um número inteiro.
+        4. O programa obtém o ano atual utilizando o objeto Date do JavaScript.
+        5. Em seguida, o programa calcula a idade do usuário subtraindo o ano de nascimento do ano atual.
+        6. Finalmente, o programa utiliza a função alert() para exibir uma mensagem personalizada, incorporando o nome e a idade calculada do usuário.
+    */
+</script>
