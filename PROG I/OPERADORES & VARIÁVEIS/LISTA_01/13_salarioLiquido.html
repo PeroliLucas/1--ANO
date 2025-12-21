@@ -1,0 +1,30 @@
+<script>
+    /*
+    DESAFIO 13:
+    Peça para o usuário informar a quantidade de horas trabalhadas no mês e o valor recebido por hora. Calcule o salário líquido, considerando os descontos de 8% para o INSS e 11% para o Imposto de Renda. Apresente o salário líquido.   
+    */
+
+    //ENTRADA
+    let horasTrabalhadas = parseFloat(prompt("Informe a quantidade de horas trabalhadas no mês:"));
+    let valorPorHora = parseFloat(prompt("Informe o valor recebido por hora trabalhada:"));
+
+    //PROCESSAMENTO
+    let salarioBruto = horasTrabalhadas * valorPorHora;
+    let descontoINSS = salarioBruto * 0.08;
+    let descontoIR = salarioBruto * 0.11;
+    let salarioLiquido = salarioBruto - descontoINSS - descontoIR;
+
+    //SAÍDA
+    alert("O salário líquido é: R$ " + salarioLiquido.toFixed(2));
+
+    // EXPLICAÇÃO:
+    /*  
+        1. O programa começa solicitando ao usuário que insira a quantidade de horas trabalhadas no mês e o valor recebido por hora trabalhada através da função prompt().
+        2. A função parseFloat() é utilizada para converter as entradas, que são strings, em números decimais.
+        3. Em seguida, o programa calcula o salário bruto multiplicando a quantidade de horas trabalhadas pelo valor por hora.
+        4. O desconto do INSS é calculado como 8% do salário bruto, e o desconto do IR é calculado como 11% do salário bruto.
+        5. O salário líquido é então calculado subtraindo os descontos do INSS e do IR do salário bruto.
+        6. Finalmente, o programa utiliza a função alert() para exibir uma mensagem informando o salário líquido.
+        7. O método toFixed(2) é utilizado para formatar o salário líquido com duas casas decimais, garantindo uma apresentação adequada do valor monetário.
+    */
+</script>

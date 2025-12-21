@@ -1,0 +1,27 @@
+<script>
+    /*
+    DESAFIO 05:
+    Peça para o usuário informar o preço de um produto e a porcentagem de desconto. Calcule o preço final do produto após aplicar o desconto e apresente o resultado.
+    */
+
+    //ENTRADA
+    let precoProduto = parseFloat(prompt("Informe o preço do produto:"));
+    let porcentagemDesconto = parseFloat(prompt("Informe a porcentagem de desconto:"));
+
+    //PROCESSAMENTO
+    let desconto = (precoProduto * porcentagemDesconto) / 100;
+    let precoFinal = precoProduto - desconto;
+
+    //SAÍDA
+    alert("O preço final do produto após o desconto é: R$ " + precoFinal.toFixed(2));
+
+    // EXPLICAÇÃO:
+    /*
+        1. O programa começa solicitando ao usuário que insira o preço do produto e a porcentagem de desconto através da função prompt().
+        2. A função parseFloat() é utilizada para converter as entradas, que são strings, em números decimais.
+        3. Em seguida, o programa calcula o valor do desconto multiplicando o preço do produto pela porcentagem de desconto e dividindo por 100.
+        4. O preço final é então calculado subtraindo o valor do desconto do preço original do produto.
+        5. Finalmente, o programa utiliza a função alert() para exibir uma mensagem informando o preço final do produto após o desconto.
+        6. O método toFixed(2) é utilizado para formatar o preço final com duas casas decimais, garantindo uma apresentação adequada do valor monetário.
+    */
+</script>

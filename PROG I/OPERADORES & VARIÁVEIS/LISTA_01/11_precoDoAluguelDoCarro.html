@@ -1,0 +1,28 @@
+<script>
+    /*
+    DESAFIO 11:
+    Peça para o usuário informar a quantidade de dias que o carro foi alugado e a quantidade de quilômetros rodados. Calcule o preço total do aluguel, considerando R$ 60,00 por dia e R$ 0,15 por quilômetro rodado. Apresente o valor total a ser pago.           
+    */
+
+    //ENTRADA
+    let diasAluguel = parseInt(prompt("Informe a quantidade de dias que o carro foi alugado:"));
+    let kmRodados = parseFloat(prompt("Informe a quantidade de quilômetros rodados:"));
+
+    //PROCESSAMENTO
+    let custoDiaria = 60.00;
+    let custoKm = 0.15;
+    let totalAluguel = (diasAluguel * custoDiaria) + (kmRodados * custoKm);
+
+    //SAÍDA
+    alert("O valor total a ser pago pelo aluguel do carro é: R$ " + totalAluguel.toFixed(2));
+
+    // EXPLICAÇÃO:
+    /*  
+        1. O programa começa solicitando ao usuário que insira a quantidade de dias que o carro foi alugado e a quantidade de quilômetros rodados através da função prompt().
+        2. A função parseInt() é utilizada para converter a entrada de dias, que é uma string, em um número inteiro, enquanto a função parseFloat() é utilizada para converter a entrada de quilômetros, que pode ser decimal, em um número de ponto flutuante.
+        3. Em seguida, o programa define os custos fixos: R$ 60,00 por dia e R$ 0,15 por quilômetro rodado.
+        4. O total do aluguel é então calculado multiplicando a quantidade de dias pelo custo diário e somando ao produto da quantidade de quilômetros pelo custo por quilômetro.
+        5. Finalmente, o programa utiliza a função alert() para exibir uma mensagem informando o valor total a ser pago pelo aluguel do carro.
+        6. O método toFixed(2) é utilizado para formatar o valor total com duas casas decimais, garantindo uma apresentação adequada do valor monetário.
+    */
+</script>

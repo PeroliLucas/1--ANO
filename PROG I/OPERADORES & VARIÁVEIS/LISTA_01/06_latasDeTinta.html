@@ -1,0 +1,26 @@
+<script>
+    /*
+    DESAFIO 06:
+    Peça para o usuário informar a quantidade de metros quadrados que deseja pintar. Considere que cada litro de tinta pinta 3 metros quadrados e que cada lata de tinta contém 18 litros. Calcule e apresente a quantidade de latas necessárias para pintar a área informada pelo usuário.
+    */
+
+    //ENTRADA
+    let metrosQuadrados = parseFloat(prompt("Informe quantos metros quadrados deseja pintar:"));
+
+    //PROCESSAMENTO
+    let litrosNecessarios = metrosQuadrados / 3;
+    let latasNecessarias = Math.ceil(litrosNecessarios / 18);
+
+    //SAÍDA
+    alert("Serão necessárias " + latasNecessarias + " latas de tinta.");
+
+    // EXPLICAÇÃO:
+    /*
+        1. O programa começa solicitando ao usuário que insira a quantidade de metros quadrados que deseja pintar através da função prompt().
+        2. A função parseFloat() é utilizada para converter a entrada, que é uma string, em um número decimal.
+        3. Em seguida, o programa calcula a quantidade de litros de tinta necessários dividindo os metros quadrados por 3, já que 1 litro de tinta cobre 3 metros quadrados.
+        4. Depois, o programa calcula a quantidade de latas necessárias dividindo os litros necessários por 18 (capacidade de cada lata).
+        5. A função Math.ceil() é utilizada para arredondar o número de latas para cima, garantindo que haja tinta suficiente mesmo que a quantidade exata não seja um número inteiro.
+        6. Finalmente, o programa utiliza a função alert() para exibir uma mensagem informando quantas latas de tinta serão necessárias.
+    */
+</script>

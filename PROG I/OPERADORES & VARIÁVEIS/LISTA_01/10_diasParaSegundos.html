@@ -1,0 +1,30 @@
+<script>
+    /*
+    DESAFIO 10:
+    Peça para o usuário informar uma quantidade de dias, horas, minutos e segundos. Calcule o total em segundos e apresente o resultado.
+    */
+
+    //ENTRADA
+    let dias = parseInt(prompt("Informe a quantidade de dias:"));
+    let horas = parseInt(prompt("Informe a quantidade de horas:"));
+    let minutos = parseInt(prompt("Informe a quantidade de minutos:"));
+    let segundos = parseInt(prompt("Informe a quantidade de segundos:"));
+
+    //PROCESSAMENTO
+    let totalSegundos = (dias * 86400) + (horas * 3600) + (minutos * 60) + segundos;
+
+    //SAÍDA
+    alert("O total em segundos é: " + totalSegundos + " segundos.");
+
+    // EXPLICAÇÃO:
+    /*
+        1. O programa começa solicitando ao usuário que insira a quantidade de dias, horas, minutos e segundos através da função prompt().
+        2. A função parseInt() é utilizada para converter cada entrada, que é uma string, em um número inteiro.
+        3. Em seguida, o programa calcula o total em segundos:
+           - Multiplica os dias por 86400 (número de segundos em um dia).
+           - Multiplica as horas por 3600 (número de segundos em uma hora).
+           - Multiplica os minutos por 60 (número de segundos em um minuto).
+           - Soma todos esses valores junto com os segundos informados.
+        4. Finalmente, o programa utiliza a função alert() para exibir uma mensagem informando o total calculado em segundos.
+    */
+</script>

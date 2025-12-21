@@ -1,0 +1,26 @@
+<script>
+    /*
+    DESAFIO 07:
+    Peça para o usuário informar o preço do jantar em um restaurante. Calcule o valor total a ser pago, considerando uma gorjeta de 10%. Apresente o valor total.
+    */
+
+    //ENTRADA
+    let precoJantar = parseFloat(prompt("Informe o preço do jantar:"));
+
+    //PROCESSAMENTO
+    let gorjeta = precoJantar * 0.10;
+    let precoTotal = precoJantar + gorjeta;
+
+    //SAÍDA
+    alert("O preço total que deverá pagar para o restaurante é: R$ " + precoTotal.toFixed(2));
+
+    // EXPLICAÇÃO:
+    /*
+        1. O programa começa solicitando ao usuário que insira o preço do jantar através da função prompt().
+        2. A função parseFloat() é utilizada para converter a entrada, que é uma string, em um número decimal.
+        3. Em seguida, o programa calcula o valor da gorjeta multiplicando o preço do jantar por 0.10 (10%).
+        4. O preço total é então calculado somando o preço do jantar ao valor da gorjeta.
+        5. Finalmente, o programa utiliza a função alert() para exibir uma mensagem informando o preço total que deverá pagar para o restaurante.
+        6. O método toFixed(2) é utilizado para formatar o preço total com duas casas decimais, garantindo uma apresentação adequada do valor monetário.
+    */
+</script>

@@ -1,0 +1,24 @@
+<script>
+    /*
+     DESAFIO 01:
+     Peça para o usuário informar o ano de nascimento dele e do irmão mais velho. Calcule e apresente a diferença de idade entre os dois.
+    */
+
+    //ENTRADA
+    let anoDeNascimentoUsuario = parseInt(prompt("Informe o seu ano de nascimento: "));
+    let anoDeNascimentoIrmao = parseInt(prompt("Informe o ano de nascimento do seu irmão mais velho: "));
+
+    //PROCESSAMENTO
+    let diferencaDeIdade = anoDeNascimentoIrmao - anoDeNascimentoUsuario;
+    
+    //SAÍDA
+    alert("A diferença de idade entre você e seu irmão mais velho é de " + diferencaDeIdade + " anos.");
+
+    // EXPLICAÇÃO:
+    /*
+        1. O programa começa solicitando ao usuário que insira seu ano de nascimento e o ano de nascimento do irmão mais velho através da função prompt().
+        2. A função parseInt() é utilizada para converter as entradas, que são strings, em números inteiros.
+        3. Em seguida, o programa calcula a diferença de idade subtraindo o ano de nascimento do usuário do ano de nascimento do irmão mais velho.
+        4. Finalmente, o programa utiliza a função alert() para exibir uma mensagem informando a diferença de idade entre os irmãos.
+    */
+</script>

@@ -1,0 +1,27 @@
+<script>
+    /*
+    DESAFIO 04:
+    Peça para o usuário informar o salário atual e a porcentagem de aumento. Calcule o novo salário e apresente o resultado.
+    */
+
+    //ENTRADA
+    let salarioAtual = parseFloat(prompt("Informe o salário atual:"));
+    let porcentagemAumento = parseFloat(prompt("Informe a porcentagem de aumento:"));
+
+    //PROCESSAMENTO
+    let aumento = (salarioAtual * porcentagemAumento) / 100;
+    let salarioFinal = salarioAtual + aumento;
+
+    //SAÍDA
+    alert("O salário final após o aumento é: R$ " + salarioFinal.toFixed(2));
+    
+    // EXPLICAÇÃO:
+    /*
+        1. O programa começa solicitando ao usuário que insira o salário atual e a porcentagem de aumento através da função prompt().
+        2. A função parseFloat() é utilizada para converter as entradas, que são strings, em números decimais.
+        3. Em seguida, o programa calcula o valor do aumento multiplicando o salário atual pela porcentagem de aumento e dividindo por 100.
+        4. O salário final é então calculado somando o salário atual ao valor do aumento.
+        5. Finalmente, o programa utiliza a função alert() para exibir uma mensagem informando o salário final após o aumento.
+        6. O método toFixed(2) é utilizado para formatar o salário final com duas casas decimais, garantindo uma apresentação adequada do valor monetário.
+    */
+</script>

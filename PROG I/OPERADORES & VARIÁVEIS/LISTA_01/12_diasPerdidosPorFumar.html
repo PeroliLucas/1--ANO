@@ -1,0 +1,29 @@
+<script>
+    /*
+    DESAFIO 12:
+    Peça para o usuário informar a quantidade de cigarros fumados por dia e a quantidade de anos que fuma. Calcule e apresente a quantidade de dias perdidos por fumar, considerando que cada cigarro reduz a vida em 10 minutos.
+    */
+
+    //ENTRADA
+    let cigarrosPorDia = parseInt(prompt("Informe a quantidade de cigarros fumados por dia:"));
+    let anosFumando = parseInt(prompt("Informe a quantidade de anos que você fuma:"));
+
+    //PROCESSAMENTO
+    let minutosPerdidos = cigarrosPorDia * anosFumando * 365 * 10;
+    let diasPerdidos = Math.floor(minutosPerdidos / 1440);
+
+    //SAÍDA
+    alert("O total de dias perdidos por fumar é: " + diasPerdidos + " dias.");
+
+    // EXPLICAÇÃO:
+    /*
+        1. O programa começa solicitando ao usuário que insira a quantidade de cigarros fumados por dia e a quantidade de anos que fuma através da função prompt().
+        2. A função parseInt() é utilizada para converter as entradas, que são strings, em números inteiros.
+        3. Em seguida, o programa calcula o total de minutos perdidos devido ao hábito de fumar:
+           - Multiplica a quantidade de cigarros fumados por dia pelo número de anos fumando.
+           - Multiplica o resultado por 365 para converter anos em dias.
+           - Multiplica por 10 para calcular os minutos perdidos (já que cada cigarro reduz a vida em 10 minutos).
+        4. O programa então converte os minutos perdidos em dias dividindo o total de minutos por 1440 (número de minutos em um dia) e arredondando para baixo usando Math.floor().
+        5. Finalmente, o programa utiliza a função alert() para exibir uma mensagem informando o total de dias perdidos por fumar.
+    */
+</script>

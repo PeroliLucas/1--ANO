@@ -1,0 +1,23 @@
+<script>
+    /*
+    DESAFIO 14:
+    Peça para o usuário informar a quantidade de ovos comprados. Calcule e apresente a quantidade de dúzias correspondentes.
+    */
+
+    //ENTRADA
+    let quantidadeDeOvos = parseInt(prompt("Informe a quantidade de ovos comprados:"));
+
+    //PROCESSAMENTO
+    let quantidadeDeDuzias = Math.ceil(quantidadeDeOvos / 12);
+
+    //SAÍDA 
+    alert("A quantidade de dúzias correspondentes é: " + quantidadeDeDuzias);
+
+    // EXPLICAÇÃO:
+    /*
+        1. O programa começa solicitando ao usuário que insira a quantidade de ovos comprados através da função prompt().
+        2. A função parseInt() é utilizada para converter a entrada, que é uma string, em um número inteiro.
+        3. Em seguida, o programa calcula a quantidade de dúzias dividindo a quantidade de ovos por 12 (já que uma dúzia equivale a 12 ovos) e utilizando a função Math.ceil() para arredondar para cima, garantindo que qualquer quantidade de ovos que não complete uma dúzia seja contada como uma dúzia completa.
+        4. Finalmente, o programa utiliza a função alert() para exibir uma mensagem informando a quantidade de dúzias correspondentes aos ovos comprados.
+    */
+</script>

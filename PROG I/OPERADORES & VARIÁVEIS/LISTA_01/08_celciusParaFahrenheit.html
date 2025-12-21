@@ -1,0 +1,23 @@
+<script>
+    /*
+    DESAFIO 08:
+    Peça para o usuário informar uma temperatura em Celsius. Converta e apresente a
+    */
+
+    //ENTRADA
+    let celsius = parseFloat(prompt("Informe a temperatura em graus Celsius:"));
+
+    //PROCESSAMENTO 
+    let fahrenheit = (celsius * 9/5) + 32;
+
+    //SAÍDA
+    alert(celsius + " graus Celsius equivalem a " + fahrenheit + " graus Fahrenheit.");
+
+    // EXPLICAÇÃO:
+    /*
+        1. O programa começa solicitando ao usuário que insira uma temperatura em graus Celsius através da função prompt().
+        2. A função parseFloat() é utilizada para converter a entrada, que é uma string, em um número decimal.
+        3. Em seguida, o programa calcula a temperatura em graus Fahrenheit utilizando a fórmula de conversão: (Celsius * 9/5) + 32.
+        4. Finalmente, o programa utiliza a função alert() para exibir uma mensagem informando a conversão de Celsius para Fahrenheit.
+    */
+</script>
