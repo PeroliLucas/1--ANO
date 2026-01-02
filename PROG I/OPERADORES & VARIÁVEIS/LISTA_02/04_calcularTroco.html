@@ -1,0 +1,24 @@
+<script>
+    /*
+     DESAFIO 04:
+     Peça para o usuário informar o valor pago pelo cliente e também informar quanto foi o consumo do cliente na loja. Considerando que o cliente dará um valor superior ao quanto consumiu, calcule e apresente, ao final do programa, quanto deverá dar de troco para o cliente.
+    */
+
+    //ENTRADA
+    let valorPago = parseFloat(prompt("Informe o valor pago pelo cliente: "));
+    let consumo = parseFloat(prompt("Informe o consumo do cliente na loja: "));
+
+    //PROCESSAMENTO
+    let troco = valorPago - consumo;
+
+    //SAÍDA
+    alert("O troco a ser dado ao cliente é: R$ " + troco.toFixed(2));
+
+    // EXPLICAÇÃO:
+    /*
+        1. O programa solicita ao usuário que insira o valor pago pelo cliente e o consumo através da função prompt().
+        2. A função parseFloat() é utilizada para converter as entradas em números decimais.
+        3. Calcula o troco subtraindo o consumo do valor pago.
+        4. Finalmente, utiliza a função alert() para exibir o troco formatado com duas casas decimais.
+    */
+</script>

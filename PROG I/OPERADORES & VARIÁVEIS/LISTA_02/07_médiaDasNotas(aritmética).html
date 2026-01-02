@@ -1,0 +1,25 @@
+<script>
+    /*
+     DESAFIO 07:
+     Peça para o aluno informar as três notas que obteve em CADAS TRIMESTRE, na disciplina de Programação I. Calcule e apresente a média que o aluno obteve ao final do ano.
+    */
+
+    //ENTRADA
+    let nota1 = parseFloat(prompt("Informe a primeira nota: "));
+    let nota2 = parseFloat(prompt("Informe a segunda nota: "));
+    let nota3 = parseFloat(prompt("Informe a terceira nota: "));
+
+    //PROCESSAMENTO
+    let mediaAritmetica = (nota1 + nota2 + nota3) / 3;
+
+    //SAÍDA
+    alert("A média aritmética do ano é: " + mediaAritmetica.toFixed(2));
+
+    // EXPLICAÇÃO:
+    /*
+        1. O programa solicita ao usuário que insira as três notas através da função prompt().
+        2. A função parseFloat() é utilizada para converter as entradas em números decimais.
+        3. Calcula a média aritmética somando as notas e dividindo por 3.
+        4. Finalmente, utiliza a função alert() para exibir a média aritmética formatada com duas casas decimais.
+    */
+</script>

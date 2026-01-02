@@ -1,0 +1,30 @@
+<script>
+    /*
+     DESAFIO 08:
+     Peça para o aluno informar as notas que obteve no PRIMEIRO TRIMESTRE e calcule a média do aluno no primeiro trimestre. Considere que a média é ponderada, e o peso das notas será 2 (dois), 3 (três) e 5 (cinco), respectivamente. Ao final do programa apresente a média trimestral que o aluno obteve.
+    */
+
+    //ENTRADA
+    let nota1 = parseFloat(prompt("Informe a primeira nota: "));
+    let nota2 = parseFloat(prompt("Informe a segunda nota: "));
+    let nota3 = parseFloat(prompt("Informe a terceira nota: "));
+
+    //PROCESSAMENTO
+    let peso1 = 2;
+    let peso2 = 3;
+    let peso3 = 5;
+    let somaPesos = peso1 + peso2 + peso3;
+    let mediaPonderada = (nota1 * peso1 + nota2 * peso2 + nota3 * peso3) / somaPesos;
+
+    //SAÍDA
+    alert("A média ponderada do primeiro trimestre é: " + mediaPonderada.toFixed(2));
+
+    // EXPLICAÇÃO:
+    /*
+        1. O programa solicita ao usuário que insira as três notas através da função prompt().
+        2. A função parseFloat() é utilizada para converter as entradas em números decimais.
+        3. Define os pesos: 2, 3 e 5 para as notas.
+        4. Calcula a média ponderada usando a fórmula (nota1*peso1 + nota2*peso2 + nota3*peso3) / somaPesos.
+        5. Finalmente, utiliza a função alert() para exibir a média ponderada formatada com duas casas decimais.
+    */
+</script>

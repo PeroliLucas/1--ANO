@@ -1,0 +1,26 @@
+<script>
+    /*
+       DESAFIO 03:
+       Peça para o usuário informar quanto pesou o seu prato de comida e também informar o preço do Kg no Buffet. Apresente o preço da refeição ao final do programa.
+      */
+
+    //ENTRADA
+    let pesoPrato = parseFloat(
+        prompt("Informe o peso do seu prato de comida (em kg): ")
+    );
+    let precoKg = parseFloat(prompt("Informe o preço do kg no buffet: "));
+
+    //PROCESSAMENTO
+    let precoRefeicao = pesoPrato * precoKg;
+
+    //SAÍDA
+    alert("O preço da refeição é: R$ " + precoRefeicao.toFixed(2));
+
+    // EXPLICAÇÃO:
+    /*
+          1. O programa solicita ao usuário que insira o peso do prato de comida e o preço por kg através da função prompt().
+          2. A função parseFloat() é utilizada para converter as entradas em números decimais.
+          3. Calcula o preço da refeição multiplicando o peso pelo preço por kg.
+          4. Finalmente, utiliza a função alert() para exibir o preço da refeição formatado com duas casas decimais.
+      */
+</script>

@@ -1,0 +1,23 @@
+<script>
+    //Peça para o usuário informar o preço original do produto e o preço do produto durante a campanha promocional. Calcule qual foi a porcentagem de desconto dada para o produto na promoção.
+
+    //ENTRADA
+    let precoOriginal = parseFloat(prompt("Informe o preço original do produto: "));
+    let precoPromocional = parseFloat(prompt("Informe o preço do produto durante a campanha promocional: "));
+
+    //PROCESSAMENTO
+    let desconto = precoOriginal - precoPromocional;
+    let porcentagemDesconto = (desconto / precoOriginal) * 100;
+
+    //SAÍDA
+    alert("A porcentagem de desconto é: " + porcentagemDesconto.toFixed(2) + "%");
+
+    //EXPLICAÇÃO:
+    /*
+    1. O programa solicita ao usuário que insira o preço original e o preço promocional através da função prompt().
+    2. A função parseFloat() é utilizada para converter as entradas em números decimais.
+    3. Em seguida, calcula o desconto subtraindo o preço promocional do preço original.
+    4. Calcula a porcentagem de desconto dividindo o desconto pelo preço original e multiplicando por 100.
+    5. Finalmente, utiliza a função alert() para exibir a porcentagem de desconto, formatada com duas casas decimais.
+    */
+</script>

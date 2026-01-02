@@ -1,0 +1,29 @@
+<script>
+    //Considere que uma revendedora paga a seus funcionários um salário fixo por mês, mais R$ 225,00 para cada carro vendido e, além disso, 5% do valor das vendas efetuadas por ele. Pergunte ao usuário qual o seu salário fixo, quantos carros foram vendidos e o valor total das vendas. Calcule e apresente qual a remuneração final do vendedor, funcionário da revendedora. Também apresente qual será o salário após o desconto de 20% de impostos.
+
+    //ENTRADA
+    let salarioFixo = parseFloat(prompt("Informe o salário fixo: "));
+    let carrosVendidos = parseInt(prompt("Informe quantos carros foram vendidos: "));
+    let valorVendas = parseFloat(prompt("Informe o valor total das vendas: "));
+
+    //PROCESSAMENTO
+    let comissaoCarros = carrosVendidos * 225;
+    let comissaoVendas = valorVendas * 0.05;
+    let remuneracaoFinal = salarioFixo + comissaoCarros + comissaoVendas;
+    let salarioLiquido = remuneracaoFinal * 0.80; 
+
+    //SAÍDA
+    alert("Remuneração final: R$ " + remuneracaoFinal.toFixed(2) + 
+    "\nSalário após desconto de 20% de impostos: R$ " + salarioLiquido.toFixed(2));
+
+    //EXPLICAÇÃO:
+    /*
+    1. O programa solicita ao usuário que insira salário fixo, carros vendidos e valor das vendas através da função prompt().
+    2. A função parseFloat() é utilizada para converter as entradas em números decimais, e parseInt() para carros vendidos.
+    3. Calcula a comissão por carros multiplicando carros vendidos por 225.
+    4. Calcula a comissão por vendas multiplicando valor das vendas por 0.05.
+    5. Calcula a remuneração final somando salário fixo, comissão por carros e comissão por vendas.
+    6. Calcula o salário líquido aplicando 20% de desconto (multiplicando por 0.80).
+    7. Finalmente, utiliza a função alert() para exibir a remuneração final e o salário líquido, formatados com duas casas decimais.
+    */
+</script>

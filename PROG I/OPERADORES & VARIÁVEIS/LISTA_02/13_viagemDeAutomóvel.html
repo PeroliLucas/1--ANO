@@ -1,0 +1,37 @@
+<script>
+    //Peça para o usuário informar quanto tempo gastou durante a viagem, quantos litros de combustível foram consumidos, o preço do litro de combustível e qual a quilometragem total percorrida. Calcule e apresente os seguintes dados:
+
+   // Velocidade média da viagem em quilômetros por hora
+   // Consumo médio de combustível do veículo
+   // Custo total do combustível
+    //Custo da viagem por quilômetro percorrido
+
+    //ENTRADA
+    let tempo = parseFloat(prompt("Informe quanto tempo gastou durante a viagem (em horas): "));
+    let litros = parseFloat(prompt("Informe quantos litros de combustível foram consumidos: "));
+    let precoLitro = parseFloat(prompt("Informe o preço do litro de combustível: "));
+    let quilometragem = parseFloat(prompt("Informe a quilometragem total percorrida: "));
+
+    //PROCESSAMENTO
+    let velocidadeMedia = quilometragem / tempo;
+    let consumoMedio = quilometragem / litros;
+    let custoTotal = litros * precoLitro;
+    let custoPorKm = custoTotal / quilometragem;
+
+    //SAÍDA
+    alert("Velocidade média: " + velocidadeMedia.toFixed(2) + 
+    " km/h\nConsumo médio: " + consumoMedio.toFixed(2) + 
+    " km/l\nCusto total do combustível: R$ " + custoTotal.toFixed(2) + 
+    "\nCusto por quilômetro: R$ " + custoPorKm.toFixed(2));
+
+    //EXPLICAÇÃO:
+    /*
+    1. O programa solicita ao usuário que insira tempo, litros, preço do litro e quilometragem através da função prompt().
+    2. A função parseFloat() é utilizada para converter as entradas em números decimais.
+    3. Calcula a velocidade média dividindo quilometragem pelo tempo.
+    4. Calcula o consumo médio dividindo quilometragem pelos litros.
+    5. Calcula o custo total multiplicando litros pelo preço do litro.
+    6. Calcula o custo por quilômetro dividindo custo total pela quilometragem.
+    7. Finalmente, utiliza a função alert() para exibir todos os dados calculados, formatados com duas casas decimais.
+    */
+</script>

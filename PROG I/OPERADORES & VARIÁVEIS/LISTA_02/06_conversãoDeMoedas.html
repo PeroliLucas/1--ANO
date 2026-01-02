@@ -1,0 +1,21 @@
+<script>
+    // O usuário do programa pretende viajar para os Estados Unidos da América. Peça para ele informar quantos dólares levará para gastar durante a viagem. Também peça para o usuário informar a cotação do dólar. Ao final, apresente, em reais, quanto o usuário gastará na viagem.
+
+    //ENTRADA
+    let dolares = parseFloat(prompt("Informe quantos dólares levará para gastar durante a viagem: "));
+    let cotacao = parseFloat(prompt("Informe a cotação do dólar: "));
+
+    //PROCESSAMENTO
+    let reais = dolares * cotacao;
+
+    //SAÍDA
+    alert("Você gastará R$ " + reais.toFixed(2) + " na viagem.");
+
+    //EXPLICAÇÃO:
+    /*
+    1. O programa solicita ao usuário que insira a quantidade de dólares e a cotação do dólar através da função prompt().
+    2. A função parseFloat() é utilizada para converter as entradas em números decimais.
+    3. Em seguida, calcula o valor em reais multiplicando os dólares pela cotação.
+    4. Finalmente, utiliza a função alert() para exibir o valor calculado em reais, formatado com duas casas decimais.
+    */
+</script>

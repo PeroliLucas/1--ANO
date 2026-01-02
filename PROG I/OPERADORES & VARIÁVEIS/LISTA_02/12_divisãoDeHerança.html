@@ -1,0 +1,26 @@
+<script>
+    /*
+     DESAFIO 12:
+     Peça para o usuário informar a quantidade de cabeças de gado que um fazendeiro possui e também informar quantos herdeiros possui. Antes de falecer, o fazendeiro doará 15% dessas cabeças de gado. Calcule e apresente quantas cabeças de gado restarão para cada herdeiro.
+    */
+
+    //ENTRADA
+    let totalGado = parseInt(prompt("Informe a quantidade total de cabeças de gado: "));
+    let numHerdeiros = parseInt(prompt("Informe o número de herdeiros: "));
+
+    //PROCESSAMENTO
+    let gadoRestante = totalGado * 0.85; 
+    let gadoPorHerdeiro = gadoRestante / numHerdeiros;
+
+    //SAÍDA
+    alert("Cabeças de gado restantes para cada herdeiro: " + gadoPorHerdeiro.toFixed(0));
+
+    // EXPLICAÇÃO:
+    /*
+        1. O programa solicita ao usuário que insira a quantidade total de gado e o número de herdeiros através da função prompt().
+        2. A função parseInt() é utilizada para converter as entradas em números inteiros.
+        3. Calcula o gado restante após doação de 15% (totalGado * 0.85).
+        4. Divide o gado restante igualmente entre os herdeiros.
+        5. Finalmente, utiliza a função alert() para exibir a quantidade de gado por herdeiro.
+    */
+</script>

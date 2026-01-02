@@ -1,0 +1,35 @@
+<script>
+    /*
+     DESAFIO 05:
+     Considere que uma pessoa está realizando uma reforma na sua casa. O pedreiro cobra R$ 30,00 a hora de trabalho e o pintor cobra R$ 25,00. Peça para o usuário informar quantas horas foram trabalhadas pelo pedreiro e quantas horas foram trabalhadas pelo pintor. Apresente, ao final do programa, as seguintes informações:
+
+     Quanto deverá ser pago para o pedreiro
+     Quanto deverá ser pago para o pintor
+     Quanto foi o custo total da obra, considerando os dois profissionais envolvidos
+    */
+
+    //ENTRADA
+    let horasPedreiro = parseFloat(prompt("Informe as horas trabalhadas pelo pedreiro: "));
+    let horasPintor = parseFloat(prompt("Informe as horas trabalhadas pelo pintor: "));
+    let valorHoraPedreiro = 30.00;
+    let valorHoraPintor = 25.00;
+
+    //PROCESSAMENTO
+    let pagamentoPedreiro = horasPedreiro * valorHoraPedreiro;
+    let pagamentoPintor = horasPintor * valorHoraPintor;
+    let custoTotal = pagamentoPedreiro + pagamentoPintor;
+
+    //SAÍDA
+    alert("Pagamento para o pedreiro: R$ " + pagamentoPedreiro.toFixed(2) +
+    "\nPagamento para o pintor: R$ " + pagamentoPintor.toFixed(2) +
+    "\nCusto total da obra: R$ " + custoTotal.toFixed(2));
+
+    // EXPLICAÇÃO:
+    /*
+        1. O programa solicita ao usuário que insira as horas trabalhadas pelo pedreiro e pelo pintor através da função prompt().
+        2. A função parseFloat() é utilizada para converter as entradas em números decimais.
+        3. Calcula o pagamento para o pedreiro (horas * 30.00) e para o pintor (horas * 25.00).
+        4. Calcula o custo total somando os pagamentos.
+        5. Finalmente, utiliza a função alert() para exibir os pagamentos e o custo total formatados com duas casas decimais.
+    */
+</script>
